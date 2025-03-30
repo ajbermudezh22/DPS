@@ -46,25 +46,58 @@ We explored its application to the following image reconstruction tasks:
 
 ## 📷 Visual Examples
 
-### Example – Inpainting
+The following are qualitative results for each task, comparing the **Label (ground truth)**, the **Input (degraded)**, and the **Reconstructed image** after applying DPS. Each table shows 3 example images for clarity.
+
+---
+
+### 🖼️ Inpainting
 
 | Label (GT) | Input (Masked) | Recon (DPS) |
 |------------|----------------|-------------|
-| ![](./figures/label/00000.png) | ![](./figures/inpainting_input/00000.png) | ![](./figures/inpainting_recon/00000.png) |
+| ![](./results/inpainting/label/00000.png) | ![](./results/inpainting/input/00000.png) | ![](./results/inpainting/recon/00000.png) |
+| ![](./results/inpainting/label/00001.png) | ![](./results/inpainting/input/00001.png) | ![](./results/inpainting/recon/00001.png) |
+| ![](./results/inpainting/label/00005.png) | ![](./results/inpainting/input/00005.png) | ![](./results/inpainting/recon/00005.png) |
 
-### Example – Gaussian Deblur
+---
+
+### 🔬 Gaussian Deblur
 
 | Label (GT) | Input (Blurred) | Recon (DPS) |
 |------------|------------------|-------------|
-| ![](./figures/label/00001.png) | ![](./figures/gb_input/00001.png) | ![](./figures/gb_recon/00001.png) |
-
-### Example – Phase Retrieval (Nonlinear)
-
-| Label (GT) | Input (FFT phase) | Recon (DPS) |
-|------------|-------------------|-------------|
-| ![](./figures/label/00005.png) | ![](./figures/pr_input/00005.png) | ![](./figures/pr_recon/00005.png) |
+| ![](./results/gaussian_blur/label/00000.png) | ![](./results/gaussian_blur/input/00000.png) | ![](./results/gaussian_blur/recon/00000.png) |
+| ![](./results/gaussian_blur/label/00001.png) | ![](./results/gaussian_blur/input/00001.png) | ![](./results/gaussian_blur/recon/00001.png) |
+| ![](./results/gaussian_blur/label/00005.png) | ![](./results/gaussian_blur/input/00005.png) | ![](./results/gaussian_blur/recon/00005.png) |
 
 ---
+
+### 🧠 Super Resolution
+
+| Label (GT) | Input (Low-res) | Recon (DPS) |
+|------------|------------------|-------------|
+| ![](./results/super_resolution/label/00000.png) | ![](./results/super_resolution/input/00000.png) | ![](./results/super_resolution/recon/00000.png) |
+| ![](./results/super_resolution/label/00001.png) | ![](./results/super_resolution/input/00001.png) | ![](./results/super_resolution/recon/00001.png) |
+| ![](./results/super_resolution/label/00005.png) | ![](./results/super_resolution/input/00005.png) | ![](./results/super_resolution/recon/00005.png) |
+
+---
+
+### 📉 Phase Retrieval (Nonlinear)
+
+| Label (GT) | Input (FFT Phase) | Recon (DPS) |
+|------------|-------------------|-------------|
+| ![](./results/phase_retrieval/label/00000.png) | ![](./results/phase_retrieval/input/00000.png) | ![](./results/phase_retrieval/recon/00000.png) |
+| ![](./results/phase_retrieval/label/00001.png) | ![](./results/phase_retrieval/input/00001.png) | ![](./results/phase_retrieval/recon/00001.png) |
+| ![](./results/phase_retrieval/label/00005.png) | ![](./results/phase_retrieval/input/00005.png) | ![](./results/phase_retrieval/recon/00005.png) |
+
+---
+
+### 🎥 Motion Blur (Nonlinear)
+
+| Label (GT) | Input (Motion-blurred) | Recon (DPS) |
+|------------|-------------------------|-------------|
+| ![](./results/motion_blur/label/00000.png) | ![](./results/motion_blur/input/00000.png) | ![](./results/motion_blur/recon/00000.png) |
+| ![](./results/motion_blur/label/00001.png) | ![](./results/motion_blur/input/00001.png) | ![](./results/motion_blur/recon/00001.png) |
+| ![](./results/motion_blur/label/00005.png) | ![](./results/motion_blur/input/00005.png) | ![](./results/motion_blur/recon/00005.png) |
+
 
 ## 💡 Key Takeaways
 
